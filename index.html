@@ -4,10 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css"> <!-- Bootsrap 5.0 - CSS -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Bootsrap 5.0 - CSS -->
     <title> PASTAS COMARRICO S.A.S </title>
 </head>
 <body>
+    <div class="container-fluid" id="main">
+
+        <!-- HEADER -->
+        <header class="container-fluid">
+            <div class="row text-center border my-3">
+                <div class="col"> <img src="./img/logo.png" alt="" style="height: 140px;"> </div>
+                <div class="col-6 border-start border-end"> 
+                    <div class="h-50 pt-4 border-bottom">PASTAS COMARRICO S.A.S </div>
+                    <div class="h-50 pt-4"> CONTROL DE MAQUINAS DE EMPAQUE POR TURNO </div>
+                </div>
+                <div class="col pt-4"> 
+                    <div class="py-2"> F -205 </div>
+                    <div class="py-2 border-bottom border-top"> VERSION: 4 </div>
+                    <div class="py-2"> PAG: 1 de 1 </div>
+                </div>
+            </div>
+        </header>
+        <!-- HEADER -->
+
+        <!-- DATOS BASICOS -->
+        <div class="container-fluid border-start border-end border-top pt-2">
+            <table class="table table-bordered text-center table-responsive">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col"> FECHA </th>
+                        <th scope="col"> TURNO </th>
+                        <th scope="col"> COORDINADOR </th>
+                        <th scope="col"> TECNICO EMPAQUE</th>
+                        <th scope="col"> REFERENCIA </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> <input type="date" class="form-control" id="fecha" disabled> </td>
+                        <td>
+                            <select name="" id="" class="form-select">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="coordinadores" class="form-select text-uppercase">
+                                <!-- AQUI HACEMOS LA CARGA DE LOS OPTION SON LOS SCRIPTS -->
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="tecnicos_emp" class="form-select text-uppercase">
+                                <!-- AQUI HACEMOS LA CARGA DE LOS OPTION SON LOS SCRIPTS -->
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="" class="form-select text-uppercase">                         
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table> 
+        </div>
+        <!-- DATOS BASICOS -->
+
+    </div>
+    <script type="module" src="./js/script.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> <!-- Bootsrap 5.0 - SCRIPT -->
 </body>
 </html>
